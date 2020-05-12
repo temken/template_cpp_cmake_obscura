@@ -9,7 +9,7 @@ target_compile_options(executable PUBLIC -Wall -pedantic)
 target_link_libraries(executable
 	PUBLIC 
 		coverage_config
-		libphysica)
+		libobscura)
 
 install(TARGETS executable DESTINATION ${BIN_DIR})
 
@@ -27,7 +27,7 @@ target_compile_options(module_library PUBLIC -Wall -pedantic)
 target_link_libraries(module_library
 	PUBLIC
 		coverage_config 
-		libphysica
+		libobscura
 	)
 
 target_include_directories(module_library

@@ -7,6 +7,9 @@
 // Headers from libphysica
 #include "Natural_Units.hpp"
 
+// Headers from obscura
+#include "Astronomy.hpp"
+
 int main()
 {
 	//Starting time
@@ -16,6 +19,7 @@ int main()
 	
 	std::cout <<fib(10) <<std::endl;
 	std::cout <<In_Units(1.0, meter/sec)<<std::endl;
+	std::cout <<Fractional_Days_since_J2000(1,1,2001,12)<<std::endl;
 
 	//Ending time and computing time
 	auto time_end = std::chrono::system_clock::now();

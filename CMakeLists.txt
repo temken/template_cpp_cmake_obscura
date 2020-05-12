@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(template_cpp_cmake_libphysica)
+project(template_cpp_cmake_obscura)
 
 # Use C++-11
 set(CMAKE_CXX_STANDARD 11)
@@ -18,17 +18,17 @@ set(EXTERNAL_DIR  ${PROJECT_SOURCE_DIR}/external)
 
 # IMPORT OF EXTERNAL PROJECTS
 include(FetchContent)
-# libphysica
-set(LIBPHYSICA_DIR   ${EXTERNAL_DIR}/libphysica)
-FetchContent_Declare(libphysica
-  GIT_REPOSITORY  https://github.com/temken/libphysica.git
+# obscura
+set(LIBPHYSICA_DIR   ${EXTERNAL_DIR}/obscura)
+FetchContent_Declare(obscura
+  GIT_REPOSITORY  https://github.com/temken/obscura.git
   GIT_TAG         origin/master
   SOURCE_DIR     "${LIBPHYSICA_DIR}"
   CMAKE_ARGS     "-DCMAKE_BUILD_TYPE=Release -DCODE_COVERAGE=OFF" )
-FetchContent_GetProperties(libphysica)
-if(NOT libphysica_POPULATED)
-    FetchContent_Populate(libphysica)
-    add_subdirectory( ${libphysica_SOURCE_DIR} )
+FetchContent_GetProperties(obscura)
+if(NOT obscura_POPULATED)
+    FetchContent_Populate(obscura)
+    add_subdirectory( ${obscura_SOURCE_DIR} )
 endif()
 
 # Googletest
