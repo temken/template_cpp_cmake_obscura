@@ -6,6 +6,10 @@ add_executable(executable
 
 target_compile_options(executable PUBLIC -Wall -pedantic)
 
+target_compile_definitions(executable
+	PRIVATE 
+		PROJECT_DIR="${PROJECT_SOURCE_DIR}/")
+
 target_link_libraries(executable
 	PUBLIC 
 		coverage_config
@@ -23,6 +27,10 @@ add_library(module_library STATIC
 set_target_properties(module_library PROPERTIES PREFIX "")
 
 target_compile_options(module_library PUBLIC -Wall -pedantic)
+
+target_compile_definitions(module_library
+	PRIVATE 
+		PROJECT_DIR="${PROJECT_SOURCE_DIR}/")
 
 target_link_libraries(module_library
 	PUBLIC
