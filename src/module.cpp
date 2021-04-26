@@ -1,11 +1,8 @@
 #include "module.hpp"
 
+#include "libphysica/Numerics.hpp"
 
-// Headers from libphysica
-#include "Numerics.hpp"
-
-// Headers from obscura
-#include "Astronomy.hpp"
+#include "obscura/Astronomy.hpp"
 
 int fib(int n)
 { 

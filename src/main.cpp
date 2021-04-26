@@ -3,17 +3,15 @@
 #include <cmath>
 #include <cstring> // for strlen
 
-#include "version.hpp"
+#include "libphysica/Natural_Units.hpp"
+#include "libphysica/Utilities.hpp"
+
+#include "obscura/Astronomy.hpp"
+#include "obscura/Configuration.hpp"
+#include "obscura/Target_Nucleus.hpp"
+
 #include "module.hpp"
-
-// Headers from libphysica
-#include "Natural_Units.hpp"
-#include "Utilities.hpp"
-
-// Headers from obscura
-#include "Astronomy.hpp"
-#include "Configuration.hpp"
-#include "Target_Nucleus.hpp"
+#include "version.hpp"
 
 using namespace libphysica::natural_units;
 
