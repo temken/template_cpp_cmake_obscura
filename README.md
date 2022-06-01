@@ -1,5 +1,5 @@
 [![Build Status](https://github.com/temken/template_cpp_cmake_obscura/workflows/Build%20Status/badge.svg)](https://github.com/temken/template_cpp_cmake_obscura/actions)
-[![codecov](https://codecov.io/gh/temken/template_cpp_cmake_obscura/branch/master/graph/badge.svg)](https://codecov.io/gh/temken/template_cpp_cmake_obscura)
+[![codecov](https://codecov.io/gh/temken/template_cpp_cmake_obscura/branch/main/graph/badge.svg)](https://codecov.io/gh/temken/template_cpp_cmake_obscura)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # template_cpp_cmake_obscura
